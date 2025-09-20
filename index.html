@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>web-task-2</title>             
+</head>
+<body>
+    <header>
+        <div class="header_content">
+            <a href="#"><img src="img/logo.png" alt="logo.png" class="logo"></a>
+            <nav class="nav_header"><a href="#">Главная</a><a href="#link_list_title">Ссылки</a><a href="#table_main_title">Таблица</a><a href="#form_main_title">Форма</a></nav>
+            <h1 class="text_header_logo"><a href="#">САЙТ.РУ</a></h1>
+        </div>
+    </header>
+
+    <main>
+        <p id="link_list_title">---------------------------------------------------------------------------</p>
+        <br>
+        <br>
+        <p class="link_list_title">Ссылки</p>
+        <br>
+        <br>
+        <div class="link_list_div">
+            <ol>
+                <!-- 1 -->
+                <li><a href="https://www.kubsu.ru/index.php" target="_blank">Абсолютная гиперссылка на kubsu.ru</a></li>
+
+                <!-- 2 -->
+                <li><a href="https://www.kubsu.ru/index.php" target="_blank">Абсолютная гиперссылка на kubsu.ru в протокое https</a></li>
+
+                <!-- 3 -->
+                <li><a href="http://www.kubsu.ru" target="_blank"><img src="images/kub.jpg" alt="kubsu.ru" width="100" class="href_img"></img></li>
+                
+                <!-- 4 -->
+                <li><a href="about=1/page2.html" target="_blank">Сокращенная ссылка на внутреннюю страницу</a></li>
+
+                <!-- 5 -->
+                <li><a href="index.html" target="_blank">Сокращенная ссылка на главную страницу</a></li>
+
+                <!-- 6 -->
+                <li><a href="#fragment" target="_blank">Ссылка на фрагмент текущей страницы</a></li>
+
+                <!-- 7 -->
+                <li><a href="https://auto.drom.ru/hyundai/all/?maxprice=1050000&maxyear=2025&fueltype=1" target="_blank">Ссылка с тремя параметрами </a></li>
+
+                <!-- 8 -->
+                <li><a href="https://www.kubsu.ru/ru/taxonomy/term/49?id=#zone-footer-wrapper" target="_blank">Ссылка с параметром id</a></li>
+
+                <!-- 9 -->
+                <li><a href="./index.html" target="_blank">Относительная ссылка на страницу в текущем каталоге</a></li>
+
+                <!-- 10 -->
+                <li><a href="./about=1/page2.html" target="_blank">Относительная ссылка на страницу в каталоге about </a></li>
+                
+                <!-- 11 -->
+                <li><a href="./about=1/page2.html" target="_blank">Относительная ссылка на страницу каталогом выше</a></li>
+
+                <!-- 12 -->
+                <li><a href="./about=1/about=2/page3.html" target="_blank">Относительная ссылка на страницу двумя каталогами выше</a></li>
+
+                <!-- 13 -->
+                <li>На сайте <a href="https://www.kubsu.ru/" class="contextual_link" target="_blank">КубГУ</a> можно найти много полезной информации</li>
+
+                <!-- 14 -->
+                <li><a href="https://www.film.ru/#block-mpblocks-mpblocks-watch-now" target="_blank">Ссылка на фрагмент стороннего сайта</a></li>
+
+                <!-- 15 -->
+                <li>
+                    MAP
+                    <p><img src="images/circle.png" alt="circle_error" width="100" usemap="#map_circle"></p>
+
+                    <p><map name="map_circle">
+                        <area shape="circle" coords="20,52,52" href="https://www.kubsu.ru/" alt="map_circle">
+                    </map></p>
+
+                    <p><img src="images/rect.png" alt="rect_error" usemap="#map_rect" width="100" height="90"></p>
+                    <p><map name="map_rect">
+                        <area shape="rect" coords="0,0,200,100" href="https://www.kubsu.ru/" alt="map_rect">
+                    </map></p>
+                </li>
+
+                <!-- 16 -->
+                <li><a href="">Ссылка с пустым href</a></li>
+
+                <!-- 17 -->
+                <li><a>Ссылка без href</a></li>
+
+                <!-- 18 -->
+                <li><a href="https://webref.ru/" rel="nofollow" target="_blank">Ссылка, запрещенная для переходов поисковикам</a></li>
+                <!-- 19 -->
+                <li>
+                    <ul>
+                        <li><a href="https://ya.ru/?utm_referrer=https%3A%2F%2Fwww.google.com%2F" target="_blank">1 вариант (robots.txt). Ссылка запрещенная для индексации</a></li>
+                        <li><a href="https://kubsu.ru/" rel="noindex" target="_blank">2 вариант (rel="noindex"). Ссылка запрещенная для индексации </a></li>
+                    </ul>
+                </li>
+
+                <!-- 20 -->
+                <li><ol>
+                    <li><a href="http://www.kubsu.ru " title="Надпись 1: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 1</a></li>
+                    <li><a href="http://www.kubsu.ru" title="Надпись 2: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 2</a></li>
+                    <li><a href="http://www.kubsu.ru" title="Надпись 3: Чтобы перейти на КубГУ нажмите" target="_blank">Надпись 3</a></li>
+                </ol></li>
+                <br>
+
+                <!-- 21 -->
+                <li><a href="ftp://user:12345@ftp.sponge.ru">Ссылка на FTP с авторизацией</a></li>
+                <p class="explanation">Реализация в html: href="ftp://user:12345@ftp.sponge.ru"</p>
+            </ol>
+        </div>
+
+        <br>
+        <br>
+
+        <p id="table_main_title">---------------------------------------------------------------------------</p>
+
+        <br>
+        <br>
+
+        <p class="table_main_title">-- Таблица --</p>
+
+        <br>
+        <br>
+
+        <div class="table_main_div">
+            <table>
+                <tr>
+                    <th colspan="4">Тип</th>
+                    <th>Данные</th>
+                    <th>Дата</th>
+                    <th>Статус</th>
+                    <th>Примечания</th>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Физ. Лицо</td>
+                    <td>Мельникова Ксения</td>
+                    <td>2025-09-20</td>
+                    <td>Завершен</td>
+                    <td>Нет примечаний</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" >Физ. Лицо</td>
+                    <td>Иванов Иван</td>
+                    <td>2025-09-20</td>
+                    <td>Активен</td>
+                    <td>Нет примечаний</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Юр. Лицо</td>
+                    <td>"ООО «Альфа Строй»"</td>
+                    <td>2025-09-20</td>
+                    <td>В ожидании</td>
+                    <td>Важный клиент</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Юр. Лицо</td>
+                    <td>Петров Петр</td>
+                    <td>2025-09-18</td>
+                    <td>В процессе</td>
+                    <td>Требуется уточнение</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Адрес</td>
+                    <td>г. Москва</td>
+                    <td>2025-09-19</td>
+                    <td>Отменен</td>
+                    <td>Не актуален</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="4">Телефон</td>
+                    <td>+7 (800) 555-35-35</td>
+                    <td>2025-09-20</td>
+                    <td>Активен</td>
+                    <td>Нет примечаний</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <br>
+        <br>
+
+        <p id="form_main_title">---------------------------------------------------------------------------</p>
+
+        <br>
+        <br>
+
+        <p class="form_main_title">-- Форма --</p>
+
+        <br>
+        <br>
+
+        <div class="form_main_div">
+            <form action="form-save.php" method="post">
+
+                <!-- <span class="personal_information">Персональные данные</span> -->
+                
+                <br>
+
+                <label class="form_fio">
+                    <span>ФИО:</span><br>
+                    <input type="text" name="name" placeholder="ФИО" size="30px" required></label>
+                </label>
+
+                <br>
+                
+                <label class="form_fio">
+                    <span>Телефон:</span><br>
+                    <input type="tel" name="phone" placeholder="Телефон" size="30px" required>
+                </label>
+
+                <br>
+
+                <label class="form_email">
+                    <span>e-mail:</span><br>
+                    <input type="email" placeholder="e-mail" size="30px" required> 
+                </label>
+
+                <br>
+                <br>
+
+                <label class="form_date">
+                    <span>Дата рождения:</span>
+                    <input type="date" name="forma_date" value="2025-09-12"><br>
+                </label>
+
+                <br>
+
+                <span class="form_gender_text">Пол</span><br>
+                
+                <div class="form_denger_div">
+
+                    <label>
+                        <input type="radio" name="radio-group-1" value="male" required/>
+                        <span>М</span>
+
+                        <input type="radio" name="radio-group-1" value="female" required/>
+                        <span>Ж</span>
+                    </label>
+
+                    <br>
+
+                </div>
+
+                <br>
+                <br>
+
+                <label class="form_languages">
+                    <span>Языки программирования:</span>
+                    <br>
+                    <select id="form_select_languages" name="languages" multiple="multiple" required>
+                        <option value="cpp">C++</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">php</option>
+                    </select>
+                </label>
+
+                <br>
+                <br>
+
+                <label>
+                    <span>Биография:</span><br>
+                    <textarea class="form_bio" name="bio" rows="4" required></textarea><br><br>
+                </label>
+                
+                <label>С контрактом ознакомлен(а)</label>
+                <input type="checkbox" checked="checked" name="check-1" required>
+                <br><br>
+                <button class="form_sumbit" type="submit">Сохранить</button>
+            </form>
+            <br>
+        </div>
+    </main>
+
+    <footer><span class="footer_text">(c) Оралов Кирилл</span></footer>
+</body>
+</html>
